@@ -12,6 +12,7 @@ public class Main {
 			for(int j = 0; j < s.length(); j++) {
 				if(!Character.isDigit(s.charAt(j))) {
 					soloCifre = false;
+					break;
 				}
 			}
 		}
