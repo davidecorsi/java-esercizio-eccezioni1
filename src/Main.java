@@ -7,23 +7,18 @@
  */
 public class Main {
 	public static void main(String[] args) {
-		boolean soloCifre = true;
-		for(String s: args) {
-			for(int j = 0; j < s.length() && soloCifre; j++) {
-				if(!Character.isDigit(s.charAt(j))) {
-					soloCifre = false;
-				}
-			}
-		}
-		if(soloCifre) {
-			int somma = 0;
+		Integer somma = 0;
+		try {
 			for(String s: args) {
 				Integer i = Integer.parseInt(s);
 				somma = somma + i;
 			}
-			System.out.println(somma);
-		} else {
+		} catch(NumberFormatException e) {
 			System.out.println("Sono state fornite stringhe che non rappresentano numeri");
+			somma = null;
+		}
+		if(somma != null) {
+			System.out.println(somma);
 		}
 	}
 }
