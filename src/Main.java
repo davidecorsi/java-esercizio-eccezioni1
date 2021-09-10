@@ -1,6 +1,6 @@
 /*
  * Nella parte di controllo una volta che viene trovato un carattere che non è una cifra è inutile 
- * esaminare le successiva. Modificate questa applicazione in 2 modi:
+ * esaminare le successiva. Modificate questa applicazione in 3 modi:
  * 1- Riscrivete questa parte ricorrendo all'istruzione break.
  * 2- Riscrivete questa parte senza ricorrere all'istruzione break. 
  * 3- Riscrivete l'applicazione utilizzando il meccanismo delle eccezioni
