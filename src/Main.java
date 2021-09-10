@@ -9,10 +9,9 @@ public class Main {
 	public static void main(String[] args) {
 		boolean soloCifre = true;
 		for(String s: args) {
-			for(int j = 0; j < s.length(); j++) {
+			for(int j = 0; j < s.length() && soloCifre; j++) {
 				if(!Character.isDigit(s.charAt(j))) {
 					soloCifre = false;
-					break;
 				}
 			}
 		}
